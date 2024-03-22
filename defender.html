@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>DEFENDER</title>
+    <style>
+                      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:sans-serif;
+         
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 2.6%;
+            
+          
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            height: 10%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content:space-between;
+            padding-left: 1%;
+            padding-right: 1%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 5px #444;
+            overflow: hidden;
+        }
+        #bar{
+            width: 30%;
+        
+            display: flex;
+
+        }
+        #bar a h5{
+            padding: 15px;
+            height: 100%;
+            color: black;
+            padding-top: 25%;
+         
+        }
+        #bar a h5:hover{
+            background-color: gainsboro;
+        }
+       
+     
+        #name{
+            height: 100%;
+            width: 20%;
+           
+            position: relative;
+            left: -1%;
+            top: -20%;
+          
+        }
+        #name2{
+            height: 100%;
+            width: 100%;
+         
+        }
+        #name2 img{
+          height: 130%;
+          width:60%;
+        }
+        #search{
+            width: 20%;
+           
+            display: flex;
+         
+
+        }
+        #retail1,#retail2{
+            height: 100%;
+            width: 140%;
+            color: black;
+            display: flex;
+        }
+        #icon{
+            font-size: 170%;
+            margin-top: 13%;
+           
+        }
+        #retail1 h5,#retail2 h5{
+            margin-top: 18%;
+           
+        }
+        #retail2{
+         margin-left: 30%;
+        }
+        #retail1:hover,#retail2:hover{
+            background-color: gainsboro;
+        }
+      
+
+
+
+        #main1{
+            height: 80%;
+            width: 100%;
+            
+            background-image: url(https://www.hdcarwallpapers.com/walls/land_rover_defender_110_75th_limited_edition_2023_4k-HD.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        #main1:hover{
+            cursor: grab;
+        }
+        #main2{
+            height: 40%;
+            width: 100%;
+         
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2%;
+        }
+        #text1{
+            height: 90%;
+            width: 40%;
+        
+        }
+        #text1:hover{
+            cursor: grab;
+        }
+        #explore{
+            height: 90%;
+            width: 40%;
+            
+        }
+      
+
+
+
+        #main3{
+            height: 60%;
+            width: 100%;
+            background-color: whitesmoke;
+         
+            padding-bottom: 2%;
+            display:flex ;
+            justify-content: space-between;
+        }
+        #car{
+            height: 100%;
+            width: 32%;
+        }
+        #carname a h5{
+            color: #000;
+        }
+        #car1{
+            height: 60%;
+            width: 100%;
+          
+            background-image: url(https://imgd.aeplcdn.com/1200x900/n/cw/ec/130763/land-rover-defender-right-side-view4.jpeg?isig=0);
+            background-position: center;
+            background-size: cover;
+            transition:all ease 0.4s ;
+        }
+        #car2{
+            height: 60%;
+            width: 100%;
+          
+            background-image: url(https://images2.alphacoders.com/116/1169052.jpg);
+            background-position: center;
+            background-size: cover;
+            transition:all ease 0.4s ;
+        }
+        #car3{
+            height: 60%;
+            width: 100%;
+         
+            background-image: url(https://cdni.autocarindia.com/ExtraImages/20200623080837_001.jpg);
+            background-position: center;
+            background-size: cover;
+            transition:all ease 0.2s ;
+        }
+  
+        #car1:hover,#car2:hover,#car3:hover{
+            filter: contrast(.6);
+            cursor: pointer;
+        }
+
+        #aboutcar   h3{
+            color: gray;
+            font-weight: 300;
+        }
+
+        #main4{
+            margin-top: 4%;
+            height: 100%;
+            width: 100%;
+            background-image: url(https://www.hdcarwallpapers.com/download/land_rover_defender_130_first_edition_2022_5k-5120x2880.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+        #main4:hover,#main5:hover,#main6:hover,#main7:hover,#main8:hover{
+            cursor: grab;
+        }
+       
+        #aboutcar{
+            height: 50%;
+            width: 100%;
+         
+
+        }
+        #aboutcar a h5{
+            color: #000;
+        }
+        #aboutcar button{
+            padding: .7%;
+           width: 12%;
+            background-color: black;
+            color: white;
+            transition: all ease 0.6s;
+           
+        }
+        #aboutcar button:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+
+
+        #main5{
+            margin-top: 4%;
+            height: 100%;
+            width: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/233/665/HD-wallpaper-2022-land-rover-defender-v8-110-carpathian-edition-front-three-quarter.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+  
+
+
+
+        #main6{
+            margin-top: 4%;
+            height: 100%;
+            width: 100%;
+            background-image: url(https://www.hdcarwallpapers.com/walls/land_rover_defender_90_d240_se_urban_pack_2020_4k-HD.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+     
+
+
+
+            #main7{
+            margin-top: 4%;
+            height: 100%;
+            width: 100%;
+            background-image: url(https://www.driving.co.uk/wp-content/uploads/sites/5/2020/04/car-makers-covid-19.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+      
+
+
+            #main8{
+            margin-top: 4%;
+            height: 100%;
+            width: 100%;
+            background-image: url(https://ph-classic-prod-images.s3.amazonaws.com/nimg/42091/34.JPG);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           #main9{
+            width: 100%;
+            height: 75%;
+         
+            display: flex;
+        }
+        #coloum{
+            height: 100%;
+            width: 25%;
+            padding-top: 2%;
+            padding-left: 2%;
+       
+        }
+        h6{
+            color: gray;
+        }
+        h6:hover,#main10 h5:hover{
+            cursor: pointer;
+            text-decoration-line: underline;
+        }
+        #h61{
+            color: #000;
+            
+        }
+        #h61:hover{
+            cursor: initial;
+            text-decoration-line:none;
+
+        }
+        #icons{
+            display: flex;
+        }
+
+        #fbicon,#yticon,#xicon{
+            background-color: #000;
+            color: white;
+            font-size: 300%;
+        }
+        #instaicon{
+            background: #000;
+            color: white;
+            font-size: 300%;
+        }
+        #icons h6{
+         margin-top: 7%;
+         margin-left: 3%;
+        }
+        #fbicon:hover{
+            background-color: rgb(26, 124, 170);
+        }
+        #xicon:hover{
+            background-color: skyblue;
+        }
+        #yticon:hover{
+            background-color: red;
+        }
+        #instaicon:hover{
+            background: radial-gradient(circle at 30% 100%,yellow 0%,orange 25%,
+                                        pink 50%, purple 75%);
+        }
+
+
+
+
+        #main10{
+            display: flex;
+             padding: 1%;
+        }
+        #main10 h5{
+            margin-left: 1%;
+            color: gray;
+        }
+        #main11{
+            height: 85%;
+            width: 100%;
+           
+        
+            padding: 1.5%;
+        }
+        #main11 img{
+            height: 7.5%;
+            width: 5%;
+        }
+        p{
+            font-size: 70%;
+        }
+     
+     
+    
+    
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+      <div id="bar">
+        <a href="#"> <h5>VEHICLES</h5></a>
+        <a href="#"><h5>PURCHASE</h5></a>
+        <a href="#"><h5>OWNERS</h5></a>
+        <a href="#"><h5>EXPLORE</h5></a>
+
+      </div>
+      <div id="name">
+          <a href="defender.html"><div id="name2"><img src="https://www.vectorkhazana.com/assets/images/products/land_rover_defender_logo,.jpg" alt="">
+          </div></a>
+      </div>
+      <div id="search">
+          <a href="#">
+          <div id="retail1">  <i id="icon" class="ri-search-line"></i> <h5>SEARCH</h5></div>
+          </a>
+          <a href="#">
+             <div id="retail2">   <i id="icon" class="ri-map-pin-2-line"></i> <h5>REATILERS</h5></div>
+            </a>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+    <div id="main1">
+    </div>
+    <div id="main2">
+        <div id="text1"> <br> <br> <br>
+           <h1>EMBRACE THE IMPOSSIBLE</h1>
+        </div>
+        <div id="explore">
+         
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div id="main3">
+      <div id="car"> 
+        <a href="#">   <div id="car1"></div></a>
+      <div id="carname">
+          <br><br>
+          <h3>DEFENDER 130</h3>
+          <br><br>
+          <a href="#"><h5><i class="ri-arrow-right-s-line"></i> EXPLORE</h5></a>
+         
+      </div>
+      </div>
+      <div id="car">
+           <a href="#"> <div id="car2"></div></a>
+          <div id="carname">
+              <br><br>
+              <h3>DEFENDER 110</h3>
+              <br><br>
+              <a href="#"><h5><i class="ri-arrow-right-s-line"></i> EXPLORE</h5></a>
+          </div>
+      </div>
+      <div id="car">
+           <a href="#"> <div id="car3"></div></a>
+          <div id="carname">
+              <br><br>
+              <h3>DEFENDER 90</h3>
+              <br><br>
+              <a href="#"><h5><i class="ri-arrow-right-s-line"></i> EXPLORE</h5></a>
+          </div>
+      </div>
+      
+    </div>
+    
+
+
+
+    <div id="main4"></div>
+
+    <div id="aboutcar">
+        <br><br><br>
+        <h1>DEFENDER 130</h1>
+        <br>
+        <h3>Freedom for all. Eight seats for shared exploration.</h3>
+        <br>
+        <a href="#"><button><i id="icon2" class="ri-arrow-right-line"></i> EXPLORE </button></a>
+        <br> <br><br>
+        <a href="#"><h5><i class="ri-arrow-right-s-line"></i> BUILD YOUR OWN</h5></a>
+    </div>
+
+
+
+    <div id="main5"></div>
+
+    <div id="aboutcar">
+        <br><br><br>
+        <h1>DEFENDER 110</h1>
+        <br>
+        <h3>Pack up and go anywhere. Optional third-row seating and serious capability.</h3>
+        <br>
+        <a href="#"><button><i id="icon2" class="ri-arrow-right-line"></i> EXPLORE </button></a>
+        <br> <br><br>
+        <a href="#"><h5><i class="ri-arrow-right-s-line"></i> BUILD YOUR OWN</h5></a>
+    </div>
+
+
+
+    <div id="main6"></div>
+
+    <div id="aboutcar">
+        <br><br><br>
+        <h1>DEFENDER 90</h1>
+        <br>
+        <h3>Defender in its purest form. Endless possibilities await.</h3>
+        <br>
+        <a href="#"><button><i id="icon2" class="ri-arrow-right-line"></i> EXPLORE </button></a>
+        <br> <br><br>
+        <a href="#"><h5><i class="ri-arrow-right-s-line"></i> BUILD YOUR OWN</h5></a>
+    </div>
+
+
+    <div id="main7"></div>
+
+    <div id="aboutcar">
+        <br><br><br>
+        <h1>HUMANITARIAN PARTNERS <br>SINCE 1954</h1>
+        <br>
+        <h3>Building community strength,preparedness and resilence around the world with the <br>British Red Cross.</h3>
+        <br>
+        <a href="#"><button><i id="icon2" class="ri-arrow-right-line"></i> EXPLORE </button></a>
+        <br> <br><br>
+   
+    </div>
+
+
+
+    <div id="main8"></div>
+
+    <div id="aboutcar">
+        <br><br><br>
+        <h1>TRAVAL.FROM A UNIQUE 
+          PERSPECTIVE
+        </h1>
+        <br>
+        <h3>Your self-drive advanture of a lifetime.</h3>
+        <br>
+        <a href="#"><button><i id="icon2" class="ri-arrow-right-line"></i> EXPLORE </button></a>
+        <br> <br><br>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="main9">
+        <div id="coloum">
+            <h6 id="h61">VEHICLES</h6>
+            <br><br>
+            <h6>RANGE ROVER</h6>
+            <br>
+            <h6>DISCOVERY</h6>
+            <br>
+            <h6>DEFENDER</h6>
+            <br>
+            <h6>SPECIAL VEHICLE OPERATIONS</h6>
+            <br>
+            <h6>FLEET & BUSINESS</h6>
+            <br>
+            <h6>FIND ME A SUV</h6>
+            <br>
+            <h6>BOOK A TEST DRIVE</h6>
+            <br>
+            <h6>BUILD YOUR OWN</h6>
+        </div>
+        <div id="coloum">
+            <h6 id="h61">OWNERSHIP</h6>
+            <br><br>
+            <h6>OWNERSHIP SERVICES</h6>
+            <br>
+            <h6>INCONTROL</h6>
+            <br>
+            <h6>SOFTWARE UPDATES</h6>
+            <br>
+            <h6>LOCATE RETAILER</h6>
+            <br>
+            <h6>ONLINE SERVICE BOOKING</h6>
+        </div>
+        <div id="coloum">
+            <h6 id="h61">EXPERIENCE</h6>
+            <br><br>
+            <h6>DRIVING EXPERIENCES</h6>
+            <br>
+            <h6>ADVENTURE TRAVEL</h6>
+            <br><br>
+            <h6 id="h61">ABOUT US</h6>
+            <br><br>
+            <h6>JAGUAR LAND ROVER</h6>
+            <br>
+            <h6>SUSTAINABILITY</h6>
+            <br>
+            <h6>JAGUAR LAND ROVER CSR POLICY</h6>
+            <br>
+            <h6>CSR PROJECTS</h6>
+            <br>
+            <h6>CSR COMMITTEE</h6>
+            <br>
+            <h6>SOCIAL RESPONSIBILITY</h6>
+            <br>
+            <h6>JLR ANNUAL RETURN</h6>
+            <br>
+            <h6>VEHICLE RECALL SEARCH</h6>
+           
+        </div>
+        <div id="coloum">
+                <h6 id="h61">JOIN THE CONVERSATION</h6>
+                <br><br>
+                <div id="icons"><i id="fbicon" class="ri-facebook-fill"></i></i><h6>FACEBOOK</h6></div>
+                <br>
+                 <div id="icons"><i id="xicon" class="ri-twitter-x-fill"></i>   <h6>X</h6></div>
+                <br>
+                <div id="icons"><i id="yticon" class="ri-youtube-line"></i> <h6>YOUTUBE</h6></div>
+                <br>
+                 <div id="icons"> <i id="instaicon" class="ri-instagram-line"></i>  <h6>INSTAGRAM</h6></div>
+        </div>
+    
+    </div>
+    <hr>
+    <div id="main10">
+        
+        <h5>CHANGE MARKET</h5>
+        <h5>TERMS & CONDITIONS</h5>
+        <h5>CONTACT US</h5>
+        <h5>COOKIES & PRIVACY</h5>
+    </div>
+    <hr>
+    <div id="main11">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Land_Rover_logo_black.svg/2560px-Land_Rover_logo_black.svg.png" alt="">
+    <br> <br> <br>
+    <p>
+        © JAGUAR LAND ROVER LIMITED 2023 <br><br><br>
+ 
+
+Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF. Registered in England No: 1672070 <br> <br><br>
+ 
+
+Smart Settings is intended to be released as part of a future wireless software update. Software development and releases are subject to movements in planning and programming, and dates may be subject to change.
+<br> <br><br>
+
+There is currently a global shortage of semi-conductor components. Jaguar Land Rover India Limited (JLRIL) is affected by this shortage and as a result, certain Jaguar and Land Rover products may not be available and delivery timelines for some products may be extended by authorised Jaguar Land Rover Retailers. Please contact your authorised Jaguar Land Rover Retailer for further updates.
+<br> <br><br>
+
+Accessories/features shown may not be part of standard equipment. iPod is a registered trademark of Apple Inc., registered in the US and other countries. Meridian is a registered trademark of Meridian Audio Ltd. Please note not all features set out above are available as standard for all Land Rover models. Some features are available as a [cost option] only. Please refer to the Owners Handbook for Navigation Terms and Conditions. The Information and specification shown are not binding and are subject to change without prior notice. These are indicative specifications for reference only.
+<br> <br><br>
+
+The figures provided are as a result of official manufacturer's tests in accordance with EU legislation. A vehicle's actual fuel consumption may differ from that achieved in such tests and these figures are for comparative purposes only.
+ 
+
+From 30 September 2019 Spotify will no longer be supporting the InControl Apps access. As the dominant preferred access by customers it will be available to customers via Smartphone Pack where installed.
+<br> <br><br>
+
+
+Important note on imagery & specification. The global shortage of semiconductors is currently affecting vehicle build specifications, option availability, and build timings. This is a very dynamic situation, and as a result imagery used within the website at present may not fully reflect current specifications for features, options, trim and colour schemes. Please consult your authorised Retailer who will be able to confirm any current restrictions with you in order to allow an informed choice.
+<br> <br><br>
+
+Jaguar Land Rover Limited is constantly seeking ways to improve the specification, design and production of its vehicles, parts and accessories and alterations take place continually, and we reserve the right to change without notice. Some features may vary between optional and standard for different model years. The information, specification, engines and colours on this website are based on European specification and may vary from market to market and are subject to change without notice. Some vehicles are shown with optional equipment and retailer-fit accessories that may not be available in all markets. Please contact your local retailer for local availability and prices.
+<br> <br><br>
+
+COLOURS
+Image colours reproduced here are provided for illustrative purposes only. Colours are reproduced on-screen and may therefore vary compared to the actual finish. The company reserves the right to alter or withdraw any colour finish without notice. Some of these colours may not be obtainable in your country. Please check availability of colours and current specifications with your Jaguar Retailer. Distributors and Retailers are not agents of Jaguar Land Rover Limited and have absolutely no authority to bind Jaguar Land Rover Limited​ to any express or implied undertaking or representation.​
+<br> <br><br>
+
+The mapping on this website is provided by external mapping providers and is for general information purposes only.
+    </p>
+ 
+    </div>
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

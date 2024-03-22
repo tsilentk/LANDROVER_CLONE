@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:sans-serif;
+         
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        #main1{
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        #rangerover,#defender,#discovery{
+            height: 100%;
+            width: 33%;
+            text-align: center;
+     
+        }
+        #rangerover2,#defender2,#discovery2{
+        height: 100%;
+        width: 100%;
+        padding-top: 60%;
+        background-color:transparent;
+         }
+         a{
+        text-decoration: none;
+    }
+    
+        button{
+            margin-top: 8%;
+            padding: 3%;
+            transition: all ease 0.3s;
+        }
+        h1{
+            color:white;
+            text-shadow: 0 0 10px #000,0 0 20px #000,0 0 30px #000;
+            letter-spacing: 8px;
+            
+        
+        }
+        button:hover{
+         color: white;
+         background-color: rgb(2, 2, 7);
+         cursor: pointer;
+        }
+        #background-video1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: grayscale(.8);
+        height: 100%;
+        width: 33%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    #background-video2{
+        position: absolute;
+        top: 0;
+        left: 33%;
+        filter: grayscale(.8);
+        height: 100%;
+        width: 34%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    #background-video3{
+        position: absolute;
+        top: 0;
+        left: 67%;
+        filter: grayscale(.8);
+        height: 100%;
+        width: 33%;
+        object-fit: cover;
+        z-index: -1;
+    }
+  
+  
+    
+    </style>
+</head>
+<body>
+    <div id="main1">
+        <div id="rangerover">
+            <video id="background-video1" autoplay loop muted>
+                <source src="rangerover.mp4" type="video/mp4">
+            
+              </video>
+            <a href="#"> 
+                   <div id="rangerover2">
+                   <h1>RANGE ROVER</h1>
+                   <button>ENTER</button>
+                   </div>
+            </a>
+        
+        </div>
+        <div id="defender">
+            <video id="background-video2" autoplay loop muted>
+                <source src="defender.mp4" type="video/mp4">
+            
+              </video>
+              <a href="#">
+                <div id="defender2">
+                    <h1>DEFENDER</h1>
+                    <button>ENTER</button>
+                  </div>
+              </a>
+          
+        
+        </div>
+        <div id="discovery">
+            <video id="background-video3" autoplay loop muted>
+                <source src="discovery.mp4" type="video/mp4">
+       
+            
+              </video>
+              <a href="#">
+                <div id="discovery2">
+                    <h1>DISCOVERY</h1>
+                    <button>ENTER</button>
+                  </div>
+              </a>
+          
+        
+        </div>
+     
+    </div>
+</body>
+</html>
